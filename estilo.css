@@ -1,0 +1,64 @@
+body{
+    background-image: url(imagens/fundo-portifolio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Barra de navegação
+********************************************/
+.container img {
+    border-radius: 20px;
+    margin-right: 500px;
+}
+
+.navbar .container {
+    justify-content: end;
+    height: 100px;
+    width: 1200px;
+}
+
+.navbar li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar li a i {
+    font-size: 30px;
+}
+
+.navbar li a:hover {
+    color: #73aa1f;
+}
+
+.navbar li a:hover {
+    transition: .3s linear;
+}
+
+
+/*Conteúdos do corpo
+**********************************************/
+.informacao-div {
+    margin: 30px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.informacao-div img:hover {
+   width: 80px;
+}
+
+.informacao-div img{
+    transition: .3s linear;
+}
+
+.informacao-div p {
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.informacao-div img {
+    padding: 5px;
+    margin-left: 160px;
+    border-bottom: 1px solid black;
+}
