@@ -42,6 +42,7 @@ body{
     margin: 30px;
     background: #fff;
     border-radius: 20px;
+    float: right;
 }
 
 .informacao-div img:hover {
@@ -61,4 +62,34 @@ body{
     padding: 5px;
     margin-left: 160px;
     border-bottom: 1px solid black;
+}
+
+#espaco-container {
+    border: 1px inset black;
+    width: 1400px;
+    margin: 30px;
+}
+
+.container p {
+    text-align: center;
+    letter-spacing: 5px;
+    color: #000;
+    border-bottom: 1px solid black;
+    border-width: 5px;
+}
+
+.container .tamanho-fonte{
+    font-size: 2em;
+}
+
+.estilo-kerry {
+    color: #000;
+}
+
+.estilo-kerry2 {
+    color: #73aa1f;
+}
+
+.tam-img {
+   text-align: center;
 }
