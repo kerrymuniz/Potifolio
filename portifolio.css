@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Configurações do background do body */
+main {
+    background: url("imagens/bg.jpg") no-repeat center center;
+    background-size: cover; /* caso a resolução for maior que a imagem esse background irá ajustar */
+    height: 92vh;
+}
+
+/* Configurando a barra de navegação */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex; /* vai colocar o logo e a lista um do lado do outro */
+    justify-content: space-around; /* o espaço ao redor vai ser a metade do espaço entre eles */
+    align-items: center; /* alinhando verticalmente ao centro */
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    height: 8vh; /* vh é a responsividade da altura */
+}
+
+.nav-list {
+    list-style: none; /* nas listas vão desaparecer as bolinhas ao lado */
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none; /* vai fazer com que desapareca o ícone da barra de navegação */
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+/* Configurando a responsividade da barra de navegação junto com o arquivo.js*/
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden; /* se algo transbordar, fica escondido do body */
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column; /* vai fazer com que os links fiquem em coluna ( um em baixo do outro ) */
+        align-items: center; /* centralizando os links */
+        justify-content: space-around; /* espalhando os links ( dando espaçamento entre eles ) */
+        transform: translateX(100%); /* tirando a barra de navegação da tela para aparecer só quando clicar no ícone */
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0); /* quando a nav-list estiver ativa a barra vai voltar a aparecer */
+}
+
+@keyframes navLinkFade { /* configurando animação */
+    from {
+        opacity: 0;
+        transform: translateX(50px); /* translação da esquerda para direita */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* transformando o ícone da nav bar num X assim que for clicado ( indicando para fechar a barra de navegação ) */
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
