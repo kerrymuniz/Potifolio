@@ -68,6 +68,26 @@
     color: #fff;
 }
 
+.ajuste-linguagens { /* estilizando os ícones das linguagens de programação */
+    font-size: 40px;;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    word-spacing: 17px;
+    cursor: pointer;
+    border: 1px solid #00804b;
+    border-radius: 5px;
+    padding: 15px;
+    height: 12vh;
+    text-align: center;
+}
+
+.ajuste-linguagens:hover {
+    font-size: 30px;
+    transition: 0.3s ease;
+    padding: 15px;
+    height: 12vh;
+}
+
 /*..Home...início..*/
 .home {
     display: flex;
