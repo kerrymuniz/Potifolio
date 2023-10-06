@@ -6,4 +6,7 @@ $(document).ready(function() { //o $(document).ready() serve para quando quiser 
             $('.navbar').removeClass("sticky");
         }
     });
+    $('.carousel').owlCarousel({ //essa função dá um efeito de "arrasta pro lado" que fica bem bonito e estiloso;
+
+    });
 });
