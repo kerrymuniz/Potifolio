@@ -563,6 +563,10 @@ section .title::after {
     width: calc(50% - 30px);
 }
 
+.contact .contact-content {
+    align-items: flex-start;
+}
+
 .contact .contact-content .left p {
     text-align: justify;
 }
@@ -587,11 +591,82 @@ section .title::after {
     margin-left: 30px;
 }
 
+.contact .contact-content .row .info .head {
+    font-weight: 500;
+}
+
+.contact .contact-content .row .info .sub-title {
+    color: #333;
+}
+
 .contact .contact-content .row ion-icon {
     font-size: 25px;
     color: #00804b;
 }
 
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .fields,
+.contact .right form .fields .field {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+}
+
+.contact .right form .fields input,
+.contact .right form .textarea textarea {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .email {
+    margin-left: 10px;
+}
+
+.contact .right form .textarea {
+    width: 100%;
+    height: 80px;
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button {
+    width: 170px;
+    height: 47px;
+}
+
+.contact .right form .button button {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #00804b;
+    background: #00804b;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+ 
+.contact .right form .button button:hover {
+    color: #00804b;
+    background: none;
+}
 
 
 
@@ -693,7 +768,8 @@ section .title::after {
         margin-bottom: 20px;
     }
 
-    .skills .skills-content .column {
+    .skills .skills-content .column,
+    .contact .contact-content .column {
         width: 100%;
         margin-bottom: 35px;
     }
