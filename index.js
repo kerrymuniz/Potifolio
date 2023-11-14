@@ -1,17 +1,17 @@
-$(document).ready(function() { //o $(document).ready() serve para quando quiser carregar o conteúdo antes da página carregar;
-    $(window).scroll(function() { //método usado para rolar a janela para um local específico;
+document.getElementById(document).ready(function() { //o $(document).ready() serve para quando quiser carregar o conteúdo antes da página carregar;
+    document.getElementById(window).scroll(function() { //método usado para rolar a janela para um local específico;
         if(this.scrollY > 20) {
-            $('.navbar').addClass("sticky"); //estou recuperando a classe  .navbar e adicionando a classe stick (.navbar .sticky{});
+            document.getElementById('.navbar').addClass("sticky"); //estou recuperando a classe  .navbar e adicionando a classe stick (.navbar .sticky{});
         } else {
-            $('.navbar').removeClass("sticky");
+            document.getElementById('.navbar').removeClass("sticky");
         } if(this.scrollY > 500) {
-            $('.scroll-up-btn').addClass("show");
+            document.getElementById('.scroll-up-btn').addClass("show");
         } else {
-            $('.scroll-up-btn').removeClass("show");
+            document.getElementById('.scroll-up-btn').removeClass("show");
         }
     });
-        $('.scroll-up-btn').click(function () {
-            $('html').animate({scrollTop: 0});
+    document.getElementById('.scroll-up-btn').click(function () {
+        document.getElementById('html').animate({scrollTop: 0});
         });
 
         var typed = new Typed(".typing", { /*..essas instruções vão dar um efeito de escrever automaticamente na tela (efeito typing...)..*/
@@ -29,12 +29,12 @@ $(document).ready(function() { //o $(document).ready() serve para quando quiser 
         });
 
 
-    $('.menu-btn').click(function(){
-        $('.navbar.menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
+        document.getElementById('.menu-btn').click(function(){
+            document.getElementById('.navbar.menu').toggleClass("active");
+            document.getElementById('.menu-btn i').toggleClass("active");
     });
     
-    $('.carousel').owlCarousel({ //essa função dá um efeito de "arrasta pro lado" que fica bem bonito e estiloso;
+    document.getElementById('.carousel').owlCarousel({ //essa função dá um efeito de "arrasta pro lado" que fica bem bonito e estiloso;
         margin:20,
         loop:true,
         autoplayTimeOut:2000,
