@@ -19,6 +19,7 @@ html {
 /*..navbar...início*/
 .navbar {
     position: fixed;
+    background: #080707;
     width: 100%;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
@@ -319,7 +320,7 @@ section .title::after {
 /*..sessão.sobre..*/
 
 .about .title::after {
-    content: "Quem sou eu";
+    content: "Who am I";
 }
 
 .about .about-content .left{
@@ -381,7 +382,7 @@ section .title::after {
 
 .services .title::after, .teams .title::after {
     background: #111;
-    content: "Que ofereço";
+    content: "What I offer";
 }
 
 .services .serv-content .card {
@@ -423,7 +424,7 @@ section .title::after {
 
 /*..sessão especialidades..*/
 .skills .title::after {
-    content: "Que faço";
+    content: "What I do";
 }
 
 .skills .skills-content .column {
@@ -517,7 +518,7 @@ section .title::after {
 
 /*..sessão.equipe..*/
 .teams .title::after {
-    content: "Especializada";
+    content: "Specialized";
 }
 
 .teams .carousel .card {
@@ -589,7 +590,7 @@ section .title::after {
 
 /*..sessão.contato..*/
 .contact .title::after {
-    content: "Fale comigo";
+    content: "Contact me";
 }
 
 .contact .contact-content .column {
