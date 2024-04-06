@@ -189,7 +189,7 @@ html {
 
 .home {
     display: flex;
-    background: url(imagens/preto.jpg) no-repeat center;
+    background: #111;
     background-size: cover;
     height: 100vh;
     color: #fff;

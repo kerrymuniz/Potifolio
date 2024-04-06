@@ -15,14 +15,14 @@ $(document).ready(function() { //o $(document).ready() serve para quando quiser 
         });
 
         var typed = new Typed(".typing", { /*..essas instruções vão dar um efeito de escrever automaticamente na tela (efeito typing...)..*/
-            strings:["Programmer","Web Developer"],
+            strings:["IT trainee","Web Developer"],
             typeSpeed:100,
             backSpeed:60,
             loop:true
         });
 
         var typed = new Typed(".typing-2", { /*..essas instruções vão dar um efeito de escrever automaticamente na tela (efeito typing...)..*/
-            strings:["Programmer","Web Developer"],
+            strings:["IT trainee","Web Developer"],
             typeSpeed:100,
             backSpeed:60,
             loop:true
