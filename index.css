@@ -94,94 +94,51 @@ html {
     color: #FF4500;
 }
 
-.html:hover {
-    font-size: 35px;
-    transition: 0.3s ease;
-    padding: 15px;
-    height: 12vh;
-}
-
 .css a {
     color: blue;
-}
-
-.css:hover {
-    font-size: 35px;
-    transition: 0.3s ease;
-    padding: 15px;
-    height: 12vh;
 }
 
 .java a {
     color: #FF4500;
 }
 
-.java:hover {
-    font-size: 35px;
-    transition: 0.3s ease;
-    padding: 15px;
-    height: 12vh;
-}
-
 .php a {
     color: #8a7c9b;
-}
-
-.php:hover {
-    font-size: 35px;
-    transition: 0.3s ease;
-    padding: 15px;
-    height: 12vh;
 }
 
 .database a {
     color: #daa520;
 }
 
-.database:hover {
-    font-size: 35px;
-    transition: 0.3s ease;
-    padding: 15px;
-    height: 12vh;
-}
-
 .laravel a {
     color: red;
-}
-
-.laravel:hover {
-    font-size: 35px;
-    transition: 0.3s ease;
-    padding: 15px;
-    height: 12vh;
 }
 
 .js a {
     color:  yellow;
 }
 
-.js:hover {
-    font-size: 35px;
-    transition: 0.3s ease;
-    padding: 15px;
-    height: 12vh;
-}
-
 .python a {
     color: #3399cc;
-}
-
-.python:hover {
-    font-size: 35px;
-    transition: 0.3s ease;
-    padding: 15px;
-    height: 12vh;
 }
 
 /* /fim estilização dos ícones */
 
 
 /*..Home...início..*/
+.imagem-inicio {
+    width: 850px;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-inicio img{
+    border-radius: 275px;
+}
+
 .conhecimento {
     color: #00804b;
     margin-top: 15px;
@@ -492,28 +449,28 @@ section .title::after {
 }
 
 .skills .skills-content .right .html::before {
-    width: 95%;
+    width: 100%;
 }
 .skills .skills-content .right .css::before {
     width: 85%;
 }
 .skills .skills-content .right .java::before {
-    width: 75%;
+    width: 20%;
 }
 .skills .skills-content .right .php::before {
-    width: 93%;
+    width: 80%;
 }
 .skills .skills-content .right .mysql::before {
-    width: 90%;
+    width: 80%;
 }
 .skills .skills-content .right .laravel::before {
-    width: 85%;
+    width: 20%;
 }
 .skills .skills-content .right .js::before {
-    width: 60%;
+    width: 30%;
 }
 .skills .skills-content .right .pyt::before {
-    width: 30%;
+    width: 50%;
 }
 
 /*..sessão.equipe..*/
