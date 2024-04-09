@@ -514,7 +514,7 @@ section .title::after {
     width: 50%;
 }
 
-/*..sessão.equipe..*/
+/*..sessão.stacks..*/
 .teams .title::after {
     content: "Specialized";
 }
@@ -535,8 +535,8 @@ section .title::after {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #00804b;
+    border-radius: 0%;
+    border: 0px solid #00804b;
     transition: all 0.3s ease;
 }
 
