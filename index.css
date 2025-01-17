@@ -118,8 +118,8 @@ html {
     color:  yellow;
 }
 
-.python a {
-    color: #3399cc;
+.vue a {
+    color: #2fe79b;
 }
 
 /* /fim estilização dos ícones */
@@ -385,6 +385,25 @@ section .title::after {
     margin: 10px 0 7px 0;
 }
 
+.project-button{
+    display: flex;
+    justify-content: center;
+    background: #00804b;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border: 2px solid #00804b;
+}
+
+.project-button:hover{
+    background: none;
+    color: #00804b;
+}
+
 /*..sessão especialidades..*/
 .skills .title::after {
     content: "What I do";
@@ -438,10 +457,25 @@ section .title::after {
 }
 
 .skills .skills-content .right .line {
-    width: 100%;
-    height: 5px;
+    width: 90%;
+    height: 2px;
     background: #ccc;
     position: relative;
+}
+
+.skills .skills-content .right .line-middle{
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.front-back-stacks{
+    margin-bottom: 10px;
+    color: #00804b;
+    font-size: 18px;
 }
 
 .skills .skills-content .right .line::before {
@@ -456,6 +490,7 @@ section .title::after {
 
 .bars-english{
     padding: 10px;
+    margin-top: 10px;
     text-align: left;
     border-bottom: 1px solid #00804b;
 }
@@ -489,29 +524,51 @@ section .title::after {
     cursor: pointer;
 }
 
+.more-information{
+    display: inline-block;
+    background: #00804b;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #00804b;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.more-information:hover{
+    color: #00804b;
+    background: none;
+}
+
 .skills .skills-content .right .html::before {
     width: 100%;
 }
 .skills .skills-content .right .css::before {
-    width: 85%;
+    width: 100%;
 }
-.skills .skills-content .right .java::before {
-    width: 20%;
+.skills .skills-content .right .btt::before {
+    width: 100%;
 }
+
+.skills .skills-content .right .js::before {
+    width: 100%;
+}
+
 .skills .skills-content .right .php::before {
-    width: 80%;
+    width: 100%;
 }
 .skills .skills-content .right .mysql::before {
-    width: 80%;
+    width: 100%;
 }
 .skills .skills-content .right .laravel::before {
-    width: 20%;
+    width: 100%;
 }
-.skills .skills-content .right .js::before {
-    width: 30%;
-}
-.skills .skills-content .right .pyt::before {
-    width: 50%;
+
+.skills .skills-content .right .vue::before {
+    width: 100%;
 }
 
 /*..sessão.stacks..*/

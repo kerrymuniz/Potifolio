@@ -15,14 +15,14 @@ $(document).ready(function() { //o $(document).ready() serve para quando quiser 
         });
 
         var typed = new Typed(".typing", { /*..essas instruções vão dar um efeito de escrever automaticamente na tela (efeito typing...)..*/
-            strings:["IT trainee","Web Developer"],
+            strings:["Software Developer","Web Developer"],
             typeSpeed:100,
             backSpeed:60,
             loop:true
         });
 
         var typed = new Typed(".typing-2", { /*..essas instruções vão dar um efeito de escrever automaticamente na tela (efeito typing...)..*/
-            strings:["IT trainee","Web Developer"],
+            strings:["Software Developer","Web Developer"],
             typeSpeed:100,
             backSpeed:60,
             loop:true
@@ -55,3 +55,16 @@ $(document).ready(function() { //o $(document).ready() serve para quando quiser 
         }
     });
 });
+
+function moreInformation() {
+    const hiddenText = document.querySelector('.hidden-text');
+    const button = document.querySelector('button');
+
+    if (hiddenText.style.display === 'none') {
+        hiddenText.style.display = 'inline';
+        button.textContent = 'Show less';
+    } else {
+        hiddenText.style.display = 'none';
+        button.textContent = 'More information';
+    }
+}
